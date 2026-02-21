@@ -1,7 +1,6 @@
 package com.classgenerator.demo.generados2;
 
 import com.classgenerator.demo.interfaces.IOperable;
-import com.classgenerator.demo.models.MensajeEstatico;
 import com.classgenerator.demo.models.WorkValue;
 
 public class Divisor implements IOperable<Double, WorkValue> {
@@ -16,7 +15,7 @@ public class Divisor implements IOperable<Double, WorkValue> {
 
     @Override
     public String whoami() {
-        return "Soy el objeto divisor Y ME LLAMARON DESDE GITHUB :) " + MensajeEstatico.getMensaje();
+        return "Soy el objeto divisor Y ME LLAMARON DESDE GITHUB :) ";
     }
 
 }
