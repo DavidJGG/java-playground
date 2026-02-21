@@ -86,6 +86,7 @@ public class DemoApplication {
 			return lines.stream().filter(line -> !line.isBlank() && line.startsWith("refrescar=")).map(line -> {
 				if (line.split("=")[1].equals("true")) {
 					try {
+						this.classLoader.close();
 						// Eliminando refrescar=true del archivo
 						Files.delete(Path.of(refreshFilePath));
 						// Agregando refrescar=false al archivo
