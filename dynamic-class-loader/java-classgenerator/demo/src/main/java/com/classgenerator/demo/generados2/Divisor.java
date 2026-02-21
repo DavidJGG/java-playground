@@ -15,7 +15,7 @@ public class Divisor implements IOperable<Double, WorkValue> {
 
     @Override
     public String whoami() {
-        return "Soy el objeto divisor";
+        return "Soy el objeto divisor Y ME LLAMARON DESDE GITHUB :)";
     }
 
 }
