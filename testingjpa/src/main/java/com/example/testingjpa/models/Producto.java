@@ -7,6 +7,8 @@ import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
 
 import java.math.BigDecimal;
+import java.util.LinkedHashSet;
+import java.util.Set;
 
 @Getter
 @Setter
@@ -24,6 +26,9 @@ public class Producto {
 
     @Column(name = "PRECIO", precision = 8, scale = 2, updatable = true)
     private BigDecimal precio;
+
+    @OneToMany(mappedBy = "codigoProducto")
+    private Set<Compra> compras = new LinkedHashSet<>();
 
 
     /*@ManyToOne(fetch = FetchType.LAZY)
