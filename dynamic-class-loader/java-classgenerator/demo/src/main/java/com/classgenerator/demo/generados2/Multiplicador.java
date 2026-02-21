@@ -12,7 +12,7 @@ public class Multiplicador implements IOperable<Long, WorkValue> {
 
     @Override
     public String whoami() {
-        return "Soy el objeto multiplicador 900 * 900 :) ";
+        return "Soy el objeto multiplicador";
     }
 
 }
