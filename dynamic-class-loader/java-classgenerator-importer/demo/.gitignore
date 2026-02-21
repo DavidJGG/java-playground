@@ -32,5 +32,3 @@ build/
 
 ### VS Code ###
 .vscode/
-!target/classes/
-!target/classes/**
