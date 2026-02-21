@@ -28,7 +28,9 @@ public class DemoApplication {
 	public void init() throws InterruptedException, IOException {
 		/*
 		 * var file = new File(
-		 * "C:\Users\DGG\Documents\java-playground\dynamic-class-loader\java-classgenerator\demo\target\classes"
+		 * "C:\Users\" + System.getProperty("user.name")
+		 * +
+		 * "\Documents\java-playground\dynamic-class-loader\java-classgenerator\demo\target\classes"
 		 * );
 		 */
 		var urls = new URL[] {
