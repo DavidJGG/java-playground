@@ -81,7 +81,7 @@ public class DemoApplication {
 			}
 
 			var refreshFilePath = "C:\\Users\\" + System.getProperty("user.name")
-					+ "\\Documents\\java-playground\\dynamic-class-loader\\java-classgenerator-importer\\refrescar";
+					+ "\\Documents\\java-playground\\dynamic-class-loader\\java-classgenerator-importer\\demo\\refrescar";
 			var lines = Files.readAllLines(Path.of(refreshFilePath), StandardCharsets.UTF_8);
 			return lines.stream().filter(line -> !line.isBlank() && line.startsWith("refrescar=")).map(line -> {
 				if (line.split("=")[1].equals("true")) {
